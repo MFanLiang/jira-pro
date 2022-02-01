@@ -1,0 +1,20 @@
+目录public > manifest.json文件 用来加载pwa的配置文件
+目录public > index.html 项目的整体打包出口文件
+目录public > robots.txt文件 代指搜索引擎的爬虫，用来配置搜索引擎如何处理当前项目
+
+目录src > react-app-env.d.ts       引入预先定义好的typescript的类型
+目录src > reportWebVitals.ts       埋点上报的配置文件
+目录src > setupTests.ts            单元测试的配置文件
+目录src > screens                  存放页面级别的代码
+目录src > auth-provider.ts         用来控制以及处理jwt中的token行为的配置文件
+
+yarn.lock               锁定项目中所使用的模块版本号
+README.md               是对本项目工程的说明文件
+tsconfig.json           对typescript的配置文件
+package.json            整个项目所安装的第三方依赖包，以及项目工程版本说明，项目工程配置命令，eslint等配置
+.prettierrc.json        prettier美化代码配置文件
+.prettierignore         prettier工具忽略指定文件做格式化的配置文件
+
+
+Typescript 基本原理
+Typescript是“强类型”版的javascript，在代码中定义变量（包括普通变量、函数、组件、hook等）的时候，Typescript允许在定义的同时指定其类型，这样在使用不当的时候就会及时报错提示。
