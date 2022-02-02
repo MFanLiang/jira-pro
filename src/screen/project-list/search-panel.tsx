@@ -1,6 +1,23 @@
 import React from "react";
 
-export const SearchPanel = ({param, setParam, users}) => {
+export interface User {
+  id: string;
+  name: string;
+  email: string;
+  title: string;
+  organization: string
+};
+
+interface SearchPanelProps {
+  users: User[], // users 被定义为 User 类型的数组
+  param: {
+    name: string,
+    personId: string
+  },
+  setParam: (param: SearchPanelProps["param"]) => void;
+};
+
+export const SearchPanel = ({param, setParam, users}: SearchPanelProps) => {
   
   return (
     <form>
