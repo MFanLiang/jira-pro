@@ -11,7 +11,7 @@ export const ProjectListScreen = () => {
     name: "",
     personId: "",
   });
-  const debouncedParam = useDebounce(param, 400); // 调用 useDebounce 防抖函数，为节省param变化时频繁的网络请求
+  const debouncedParam = useDebounce(param, 500); // 调用 useDebounce 防抖函数，为节省param变化时频繁的网络请求
   const [list, setList] = useState([]);
   const [users, setUsers] = useState([]);
 
